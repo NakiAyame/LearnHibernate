@@ -21,8 +21,14 @@
 			anvathienvip22
 		</property>
 
-		<!-- List mapping XML files -->
-		<mapping resource="Employee.hbm.xml" />
-
+		
+		<!--  Format code SQL -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="connection.pool_size">10</property>
+		
+		<!--  Other -->
+		<property name="hibernate.connection.characterEncoding">utf8</property>
+		
 	</session-factory>
 </hibernate-configuration>
